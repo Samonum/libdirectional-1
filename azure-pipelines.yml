@@ -15,10 +15,10 @@ steps:
 
 - task: CMake@1
   inputs:
-    workingDirectory: 'examples/$(project)/build'
+    workingDirectory: 'tutorial/build'
     cmakeArgs: '..'
 
 - task: PublishBuildArtifacts@1
   inputs:
-    pathtoPublish: 'examples/$(project)/build'
+    pathtoPublish: 'tutorial/build'
     artifactName: drop
